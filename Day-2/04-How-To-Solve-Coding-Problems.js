@@ -10,14 +10,16 @@
 // should return true
 
 const findCommon = (array1, array2) => {
-  array1.forEach((i) => {
-    array2.forEach((j) => {
-      if (array1[j] === array2[i]) {
-        return true;
-      }
-    });
-  });
+  const map = {};
+  for (let i = 0; i < array1.length; i++)
+    if (!map[array1]) map[array1[i]] = true;
+
+  for (let j = 0; j < array2.length; j++) {
+    if (map[array2[j]]) return true;
+  }
   return false;
 };
 
-findCommon(["a", "b", "c", "x"], ["z", "y", "x"]);
+const array1 = ["a", "b", "c", "x"];
+const array2 = ["z", "y", "x"];
+console.log(findCommon(array1, array2));
