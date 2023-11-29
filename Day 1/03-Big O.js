@@ -7,11 +7,8 @@ function findNemo(array) {
     }
   }
 }
-// findNemo(nemo);
+findNemo(nemo);
 
-// 017
-
-//// Log all paris of array
 const boxes = [1, 2, 3, 4, 5];
 
 for (let i = 0; i < boxes.length; i++) {
