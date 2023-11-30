@@ -23,3 +23,8 @@ const findCommon = (array1, array2) => {
 const array1 = ["a", "b", "c", "x"];
 const array2 = ["z", "y", "x"];
 console.log(findCommon(array1, array2));
+
+const common = (arr1, arr2) => {
+  return arr1.some((item) => arr2.includes(item));
+};
+console.log(common(array1, array2));
