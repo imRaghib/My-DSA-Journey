@@ -47,3 +47,5 @@ console.log(getBucket);
 
 const keys = myHashTable.keys();
 console.log(keys);
+
+//009 Hash tables vs Arrays
