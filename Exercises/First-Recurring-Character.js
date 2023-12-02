@@ -32,3 +32,20 @@ const func = (arr) => {
 
 const response = func(arr);
 console.log(response);
+
+//using hashtables
+// const arr = [2, 7, 1, 9, 3, 5, 4, 4];
+const func2 = (arr) => {
+  let map = {};
+  for (let i = 0; i < arr.length; i++) {
+    console.log(map);
+    if (map[arr[i]] !== undefined) {
+      // if exits then return
+      console.log(map);
+      return arr[i];
+    } else map[arr[i]] = i; // if not exists then add
+  }
+  return undefined;
+};
+const response2 = func2(arr);
+console.log(response2);
