@@ -1,4 +1,4 @@
-//Stacks using Linked-list
+//Stacks
 
 class Node {
   constructor(value) {
@@ -52,5 +52,3 @@ myStack.pop();
 
 const response = myStack.peak();
 console.log(response);
-
-//Queues
