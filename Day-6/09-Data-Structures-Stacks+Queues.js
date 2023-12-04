@@ -78,6 +78,7 @@ class Stack2 {
 
 const myStack = new Stack2();
 myStack.push(10);
+
 myStack.push(12);
 myStack.push(15);
 myStack.pop();
