@@ -65,7 +65,10 @@ class BinarySearchTree {
     }
     return false;
   }
-  remove(value) {}
+  remove(value) {
+    if (value === this.root.value) {
+    }
+  }
 }
 
 const tree = new BinarySearchTree();
