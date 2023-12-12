@@ -66,7 +66,27 @@ class BinarySearchTree {
     return false;
   }
   remove(value) {
-    if (value === this.root.value) {
+    if (!this.root) {
+      return false;
+    }
+    const currentNode = this.root;
+
+    const parentNode = null;
+    while (currentNode) {
+      if (value < currentNode.value) {
+        parentNode = currentNode;
+        currentNode = currentNode.left;
+      } else if (value > currentNode.value) {
+        parentNode = currentNode;
+        currentNode = currentNode.right;
+      } else if (value === currentNode.value) {
+        if (currentNode.right === null) {
+          if (parentNode === null) {
+            this.root = currentNode.left;
+          } else {
+          }
+        }
+      }
     }
   }
 }
