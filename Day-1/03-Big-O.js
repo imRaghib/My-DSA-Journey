@@ -7,6 +7,7 @@ function findNemo(array) {
     }
   }
 }
+
 findNemo(nemo);
 
 const boxes = [1, 2, 3, 4, 5];
