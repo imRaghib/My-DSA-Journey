@@ -70,8 +70,8 @@ class BinarySearchTree {
       return false;
     }
     const currentNode = this.root;
-
     const parentNode = null;
+
     while (currentNode) {
       if (value < currentNode.value) {
         parentNode = currentNode;
@@ -84,6 +84,11 @@ class BinarySearchTree {
           if (parentNode === null) {
             this.root = currentNode.left;
           } else {
+            if (currentNode.value < parentNode.value) {
+              parentNode.left = currentNode.left;
+            } else if (currentNode.value > parentNode.value) {
+              parentNode.right = currentNode.left;
+            }
           }
         }
       }
