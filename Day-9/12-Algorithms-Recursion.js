@@ -57,6 +57,7 @@ console.log(res2);
 */
 
 // given index return fibonacci number
+//O(n-2)
 function fibonacciIerative(n) {
   let arr = [0, 1];
   if (index < 2) {
@@ -69,6 +70,7 @@ function fibonacciIerative(n) {
   return arr[n];
 }
 
+//O(2^N)
 function fibonacciRecursive(n) {
   if (n < 2) {
     return n;
